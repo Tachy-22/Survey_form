@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ArtisanPay Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <div class="register">
+        <figure>
+          <img src="img.jpeg" alt="" />
+        </figure>
+        <button type="submit">Login</button>
+        <button type="submit">sign up</button>
+      </div>
+    </header>
+    <main>
+      <div class="header">
+        <h1 id="title">ArtisanPay Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+      <form  action="./page2/index.html" id="survey-form">
+        <fieldset class="text_input">
+          <label id="name-label" for="name">Name</label>
+          <input
+            placeholder="Enter your name"
+            class="text"
+            type="text"
+            id="name"
+            required
+          />
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            class="text"
+            type="email"
+            id="email"
+            required
+          />
+          <label id="number-label" for="Age(optional)">Age(optional)</label>
+          <input
+            placeholder="Enter your age"
+            class="text"
+            type="number"
+            id="number"
+            required
+            min="13"
+            max="120"
+          />
+          <label for="select">What is your preffered transaction type?</label>
+          <select class="text" name="select" id="dropdown">
+            <option value="">(Select transaction type)</option>
+            <option value="java">P2P</option>
+            <option value="python">Market trade</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="second_fieldset">
+          <label for="">Would you recommend ArtisanPay to a friend?</label>
+          <article>
+            <div>
+              <label for="definitely"
+                ><input
+                  value="Definitely"
+                  type="radio"
+                  name="Maybe"
+                  id="definitely"
+                />Definitely</label
+              >
+            </div>
+            <div>
+              <label for="maybe">
+                <input
+                  value="Maybe"
+                  type="radio"
+                  name="Maybe"
+                  id="maybe"
+                />Maybe</label
+              >
+            </div>
+            <div>
+              <label for="notsure"
+                ><input
+                  value="Not sure"
+                  type="radio"
+                  name="Maybe"
+                  id="notsure"
+                />Not sure</label
+              >
+            </div>
+          </article>
+        </fieldset>
+        <fieldset>
+          <label for="">What is your favorite feature of ArtisanPay?</label>
+          <select placeholder="" name="" id="">
+            <option value="">Select an option</option>
+            <option value="Airtime-purchases">
+              Airtime purchases with crypto
+            </option>
+            <option value="Open source">Forex copy-trade</option>
+          </select>
+          <label for=""
+            >What would you like to see improved? (Check all that apply)</label
+          >
+          <article>
+            <div>
+              <label for="Front-end Projects"
+                ><input
+                  value="Front-end"
+                  type="checkbox"
+                  name=""
+                  id="Front-end Projects"
+                />Payment confirmation duration</label
+              >
+            </div>
+            <div>
+              <label for="Back-end"
+                ><input
+                  value="Back-end"
+                  type="checkbox"
+                  name=""
+                  id="Back-end"
+                />Verification methods</label
+              >
+            </div>
+            <div>
+              <label for="Data Visualization"
+                ><input
+                  value="Data"
+                  type="checkbox"
+                  name=""
+                  id="Data Visualization"
+                />Dollar card access</label
+              >
+            </div>
+            <div>
+              <label for="Challenges"
+                ><input
+                  value="Challenges"
+                  type="checkbox"
+                  name=""
+                  id="Challenges"
+                />Exchange rates</label
+              >
+            </div>
+            <div>
+              <label for="Open Source Community"
+                ><input
+                  value="Open Source"
+                  type="checkbox"
+                  name=""
+                  id="Open Source Community"
+                />trading options</label
+              >
+            </div>
+            <div>
+              <label for="Gitter"
+                ><input
+                  value="Gitter"
+                  type="checkbox"
+                  name=""
+                  id="Gitter"
+                />Customer care services</label
+              >
+            </div>
+          </article>
+        </fieldset>
+        <fieldset class="comment">
+          <label for="">Any comments or suggestions?</label>
+          <textarea
+            placeholder="Enter your comment here..."
+            name=""
+            id=""
+            cols="40"
+            rows="4"
+          ></textarea>
+          <label for="submit"
+            ><input
+              class="text"
+              id="submit"
+              type="submit"
+              value="submit"
+             
+          /></label>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
