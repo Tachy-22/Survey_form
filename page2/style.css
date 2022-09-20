@@ -3,18 +3,28 @@
   padding: 0;
 }
 
+html,
 body {
   height: 100%;
   background: linear-gradient(
-    270deg,
+    -190deg,
     rgba(30, 30, 121, 0.8) 10%,
-    rgb(175, 24, 49) 90%
+    rgba(175, 24, 49, 0.8) 90%
   );
+  padding: 0;
+  margin: 0;
 }
 
 header {
   height: 70px;
-  background: linear-gradient(70deg, red, blue, red, red 10%, blue, red);
+  background: linear-gradient(
+    70deg,
+    rgba(12, 7, 54, 0.466) 80%,
+    rgba(0, 0, 255, 0.3) 5%,
+    rgba(255, 0, 0, 0.5),
+    rgba(0, 0, 255, 0.2),
+    rgba(255, 0, 0, 0.2)
+  );
   border-bottom: 5px solid rgb(63, 12, 91);
   border-top: 5px solid rgb(34, 3, 34);
 }
